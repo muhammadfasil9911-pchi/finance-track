@@ -5,7 +5,8 @@ from routes import main_bp
 import os
 
 def create_app():
-    app = Flask(__name__)
+    if __name__ =="__main__"
+    app.run()
     app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'default_secret_key_for_development_only')
     app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///finance.db')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
