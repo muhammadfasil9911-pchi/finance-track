@@ -4,7 +4,7 @@ from auth import auth_bp
 from routes import main_bp
 import os
 
-def create_app():
+gunicorn app:create_app():
     if __name__ =="__main__"
     app.run()
     app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'default_secret_key_for_development_only')
